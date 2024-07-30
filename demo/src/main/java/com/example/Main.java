@@ -23,7 +23,7 @@ public class Main {
             HttpClient client = HttpClient.newHttpClient();
 
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI("https://api.wazzup24.com/v3/templates/whatsapp"))
+                    .uri(new URI("https://api.wazzup24.com/v3/templates/whatsapp?limit=250"))
                     .header("Authorization", "Bearer " + apiToken)
                     .GET()
                     .build();
